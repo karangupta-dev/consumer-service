@@ -3,7 +3,9 @@ package com.demo.consumer_service;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {
+		"config", "listener"
+})
 public class ConsumerServiceApplication {
 
 	public static void main(String[] args) {
